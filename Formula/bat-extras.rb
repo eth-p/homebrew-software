@@ -20,6 +20,7 @@ class BatExtras < Formula
     bin.install "bin/batgrep" => "batgrep"
     bin.install "bin/batman" => "batman"
     bin.install "bin/batwatch" => "batwatch"
+    bin.install "bin/batdiff" => "batdiff"
     bin.install "bin/prettybat" => "prettybat"
   end
 
