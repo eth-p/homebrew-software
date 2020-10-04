@@ -1,8 +1,8 @@
 class BatExtras < Formula
   desc "Bash scripts that integrate bat with various command-line tools"
-  homepage "https://github.com/eth-p/bat-extras/blob"
-  url "https://github.com/eth-p/bat-extras/archive/v2020.10.04.tar.gz"
-  sha256 "a198d75247265cae22bd3f7e067d27cfa52d12b698929b16fa4a79fd94df5dc2"
+  homepage "https://github.com/eth-p/bat-extras"
+  url "https://github.com/eth-p/bat-extras/archive/v2020.10.05.tar.gz"
+  sha256 "4555e9d809fbc0773275f211e9940afad157cfb6e49253d752a0b977470780a2"
   head "https://github.com/eth-p/bat-extras.git"
 
   depends_on "shfmt" => :build
@@ -15,13 +15,22 @@ class BatExtras < Formula
   depends_on "clang-format" => :recommended # prettybat
 
   def install
-    system "./build.sh", "--no-verify", "--no-inline", "--minify=all"
+    system "./build.sh", "--no-verify", "--no-inline", "--minify=all", "--manuals"
 
     bin.install "bin/batgrep" => "batgrep"
+    man1.install "man/batgrep.1"
+
     bin.install "bin/batman" => "batman"
+    man1.install "man/batman.1"
+
     bin.install "bin/batwatch" => "batwatch"
+    man1.install "man/batwatch.1"
+
     bin.install "bin/batdiff" => "batdiff"
+    man1.install "man/batdiff.1"
+
     bin.install "bin/prettybat" => "prettybat"
+    man1.install "man/prettybat.1"
   end
 
   def caveats
