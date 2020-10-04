@@ -1,8 +1,8 @@
 class BatExtras < Formula
   desc "Bash scripts that integrate bat with various command-line tools"
   homepage "https://github.com/eth-p/bat-extras/blob"
-  url "https://github.com/eth-p/bat-extras/archive/v2020.05.01.tar.gz"
-  sha256 "ad6a65570f7dfd49e947eec65b2fae52be59feedf7030de801f7fd5b25193885"
+  url "https://github.com/eth-p/bat-extras/archive/v2020.10.04.tar.gz"
+  sha256 "a198d75247265cae22bd3f7e067d27cfa52d12b698929b16fa4a79fd94df5dc2"
   head "https://github.com/eth-p/bat-extras.git"
 
   depends_on "shfmt" => :build
@@ -15,7 +15,7 @@ class BatExtras < Formula
   depends_on "clang-format" => :recommended # prettybat
 
   def install
-    system "./build.sh", "--no-verify", "--minify=all"
+    system "./build.sh", "--no-verify", "--no-inline", "--minify=all"
 
     bin.install "bin/batgrep" => "batgrep"
     bin.install "bin/batman" => "batman"
