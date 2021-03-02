@@ -12,7 +12,7 @@ class BatExtras < Formula
   depends_on "prettier" # prettybat
   depends_on "ripgrep" # batgrep
   depends_on "shfmt" # prettybat
-  depends_on "clang-format" => :recommended # prettybat
+  depends_on "clang-format" => :optional # prettybat
 
   def install
     system "./build.sh", "--no-verify", "--no-inline", "--minify=all", "--manuals"
