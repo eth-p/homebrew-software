@@ -11,5 +11,11 @@ brew install https://raw.githubusercontent.com/eth-p/homebrew-software/master/Fo
 
 ## Formulae
 
-- [bat-extras](https://github.com/eth-p/bat-extras)
+- ~~[bat-extras](https://github.com/eth-p/bat-extras)~~ Deprecated.
+- [bat-extras-batgrep](https://github.com/eth-p/bat-extras/blob/master/doc/batgrep.md)
+- [bat-extras-batdiff](https://github.com/eth-p/bat-extras/blob/master/doc/batdiff.md)
+- [bat-extras-batpipe](https://github.com/eth-p/bat-extras/blob/master/doc/batpipe.md)
+- [bat-extras-batman](https://github.com/eth-p/bat-extras/blob/master/doc/batman.md)
+- [bat-extras-batwatch](https://github.com/eth-p/bat-extras/blob/master/doc/batwatch.md)
+- [bat-extras-prettybat](https://github.com/eth-p/bat-extras/blob/master/doc/prettybat.md)
 
