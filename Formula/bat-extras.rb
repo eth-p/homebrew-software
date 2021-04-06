@@ -1,8 +1,8 @@
 class BatExtras < Formula
   desc "Bash scripts that integrate bat with various command-line tools"
   homepage "https://github.com/eth-p/bat-extras"
-  url "https://github.com/eth-p/bat-extras/archive/v2021.03.30.tar.gz"
-  sha256 "0aa0ba879dd30728bf37bf6d7fd12c28d2c3c9709e268d4a90c2096ce08e4534"
+  url "https://github.com/eth-p/bat-extras/archive/v2021.04.06.tar.gz"
+  sha256 "c34200445239aa2fbdb45b6bd700831d1156dc61e8745e0cce5675726c0b8317"
   head "https://github.com/eth-p/bat-extras.git"
 
   depends_on "bat-extras-batgrep" => :recommended
