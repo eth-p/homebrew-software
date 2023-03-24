@@ -2,7 +2,7 @@ class BatExtrasBatgrep < Formula
   desc "Quickly search through and highlight files using ripgrep"
   homepage "https://github.com/eth-p/bat-extras/blob/master/doc/batgrep.md"
   url "https://github.com/eth-p/bat-extras/archive/v2023.03.21.tar.gz"
-  sha256 "c2469767c7e76f9d9c4a25574a6ed895754e05410f4ba34f534c148e09dca725"
+  sha256 "27d6b5849448b7cb76404f549f89def9ea1d5adafca85ad39daf25e9ba6ed907"
   head "https://github.com/eth-p/bat-extras.git"
 
   depends_on "shfmt" => :build
